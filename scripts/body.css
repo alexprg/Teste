@@ -1,0 +1,191 @@
+/*-----------------------------------------------------------------------
+LAYOUT - SIA(modern browsers)
+
+Version: 	1.0 - 2012
+author: 	Burocratik (alexandre r. gomes)
+email: 		alex@burocratik.com
+website: 	http://www.burocratik.com
+-----------------------------------------------------------------------*/
+@import url(reset.css);
+
+/*----------------------------------------------------------------------*/
+html, body{ /* need html and min-height and not just height for ipad*/
+	width: 100%; min-height: 100%;  color: #505050;	background: #eaeaea; overflow-x: hidden;  
+	text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'siaIDLE';
+    src: url('../fonts/sia-idle.eot');
+    src: url('../fonts/sia-idle.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-idle.woff') format('woff'),
+         url('../fonts/sia-idle.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: 'siaUNIul';
+    src: url('../fonts/sia-uniUL.eot');
+    src: url('../fonts/sia-uniUL.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-uniUL.woff') format('woff'),
+         url('../fonts/sia-uniUL.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: 'siaUNIcn';
+    src: url('../fonts/sia-uniCN.eot');
+    src: url('../fonts/sia-uniCN.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-uniCN.woff') format('woff'),
+         url('../fonts/sia-uniCN.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: 'siaUNIlcn';
+    src: url('../fonts/sia-uniLCN.eot');
+    src: url('../fonts/sia-uniLCN.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-uniLCN.woff') format('woff'),
+         url('../fonts/sia-uniLCN.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: 'siaSCRIPT';
+    src: url('../fonts/sia-script.eot');
+    src: url('../fonts/sia-script.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-script.woff') format('woff'),
+         url('../fonts/sia-script.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: 'siaPOLb';
+    src: url('../fonts/sia-polB.eot');
+    src: url('../fonts/sia-polB.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-polB.woff') format('woff'),
+         url('../fonts/sia-polB.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+
+@font-face {
+    font-family: 'siaPOLm';
+    src: url('../fonts/sia-polM.eot');
+    src: url('../fonts/sia-polM.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-polM.woff') format('woff'),
+         url('../fonts/sia-polM.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+@font-face {
+    font-family: 'siaHand';
+    src: url('../fonts/sia-handwriting.eot');
+    src: url('../fonts/sia-handwriting.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sia-handwriting.woff') format('woff'),
+         url('../fonts/sia-handwriting.ttf') format('truetype');
+    font-weight: normal; font-style: normal; 
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------
+=HEADER
+-------------------------------------------------------------------------*/
+header{
+	position: relative; width: 1400px; height: 65px; margin:30px auto 10px auto; z-index: 900;
+	font: 13px Georgia, Helvetica, Arial, sans-serif; color:#3c3c3c; background: #ffffff;
+	-webkit-box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, .10);
+	box-shadow:  0px 1px 3px 0px rgba(0, 0, 0, .10);
+	  
+}
+header h1{
+	position: absolute; top:0; left:0; width:151px; height:65px; margin: 0;	text-indent: -5555px; 
+}
+header h1 a{
+	position: absolute; display: block; width:100%; height:100%; 
+	background: transparent url(../imgs/header-id.png) no-repeat; background-size: 151px 65px;
+}
+header a{color:#3c3c3c;}
+header a:hover{color:#ffffff;}
+
+/******* MAIN NAVIGATION *******/
+header nav{position:relative; margin-left: 151px;}
+#mainNav li{
+	position:relative; float: left; width: 134px; height: 65px; text-align: center; line-height: 65px; border-right: 1px solid #f1f1f1; 
+}
+#mainNav li a{
+	display: block;	background: transparent url(../imgs/nav-main-bg.gif) repeat-x 0 -70px;
+	-webkit-transition: background .2s ease; transition: background .2s ease; 
+}
+#mainNav li a:hover{display: block;	background-position:  0 0;}
+#mainNav li.active a{background: none; text-decoration: underline; cursor: default;}
+#mainNav li.active a:hover{color:#3c3c3c;}
+header nav p{position: relative; float: right; width:139px; height: 65px; line-height: 65px;}
+header nav div{position: relative; float: right; width:139px;}
+
+/* linguas */
+ul#lingMenu{
+	position: relative; float:right;  width: 138px; height: 65px; text-align: left;
+	padding: 0; line-height:65px; border-left: 1px solid #f1f1f1; overflow: hidden; 
+}
+ul#lingMenu li{position: relative; width: 138px; height: 35px; display: block; padding: 0; line-height: 35px;}
+ul#lingMenu li.active{
+	width: 138px; height: 65px; padding: 0; line-height: 65px;
+	background: transparent url(../imgs/nav-main-bg.gif) repeat-x 0 -70px;
+	-webkit-transition: background .2s ease; transition: background .2s ease; 
+}
+ul#lingMenu li.active.over{background-position:  0 0;}
+ul#lingMenu li.active a{color: #3c3c3c; background: transparent url(../imgs/linguas-seta.png) no-repeat left top; background-size: 138px auto;}
+ul#lingMenu:hover li.active a{color: #ffffff; background: transparent url(../imgs/linguas-seta.png) no-repeat left bottom; background-size: 138px auto;}
+ul#lingMenu li.active.over a{color: #ffffff;}
+ul#lingMenu li.off+li{padding-top: 15px; background: #272727; }
+ul#lingMenu li:last-child{padding-bottom: 15px;}
+ul#lingMenu li a{position: absolute; display:block; width: 100%; height: 100%; background: #272727; color:#ffffff;}
+ul#lingMenu li a span{padding-left: 34px; }
+ul#lingMenu li a:hover{text-decoration: underline;}
+ul#lingMenu li.off{display: none;}
+
+
+
+@media only screen and (max-width: 1500px) {
+	header{
+		position: relative; width: 90%; 
+	  
+	}	
+}
+@media only screen and (max-width: 1220px) {
+	header nav p{display: none;}	
+	#mainNav li:last-child{border-right: none; }
+}
+@media only screen and (max-width: 1100px) {
+	header{
+		position: relative; width: 978px; 
+	  
+	}	
+}
+
+
+/*-------------------------------------------------------------------------
+=CONTENT
+-------------------------------------------------------------------------*/
+.fullH{position: relative; width: 100%; height: 100%;}
+.wrapperCenter{position: relative; width: 980px; height: 100%; margin: 0 auto;}
+
+/*-------------------------------------------------------------------------
+=COMUNS
+-------------------------------------------------------------------------*/
+
+
+/******* FORMS *******/
+a{text-decoration: none;}
+a:hover, a:focus{text-decoration: none;}
+a[href^="tel:"]{cursor: default;}
+
+::-moz-selection{background: #fa040d;color: #ffffff;} 
+::selection{background: #fa040d;color: #ffffff;}
+img{
+  -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;	
+  -webkit-user-drag: none; -moz-user-drag: none;
+}
+
+/******* LINKS *******/
+input:focus {outline: none;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {/*no arrows on input number*/ /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

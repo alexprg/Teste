@@ -1,0 +1,108 @@
+/*-------------------------------------------------------------------------
+LAYOUT - SIA (modern browsers)
+
+Version: 	1.0 - 2013
+author: 	Burocratik (alexandre r. gomes)
+email: 		alex@burocratik.com
+website: 	http://www.burocratik.com
+-------------------------------------------------------------------------*/
+@import url(body.css);
+
+/*-----------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------
+=CREATE FLAVOURS
+-------------------------------------------------------------------------*/
+#create{
+	position: relative; width: 100%; height: 100%; margin-top: -105px; background: #f8f6f2;
+	background: transparenturl(../imgs/index-create-glow.png) no-repeat 40% -90px;
+}
+
+#saco{
+	position: absolute; top: 158px; left:224px; width: 534px; height: 665px;
+	background: transparent url(../imgs/index-saco1.png) no-repeat;
+}
+
+#create .btnCreate{
+	position: absolute; width:167px; height: 209px; right:-52px; top: 420px; text-align: center;
+	background: transparent url(../imgs/index-create-createyourcrips.png) no-repeat; background-size: 167px 209px;	
+}
+#create .btnCreate span{
+	position: absolute; top:42px; left: 5px;
+	font: 15px/18px "siaIDLE", Helvetica, Arial, sans-serif;  color: #fff;
+}
+#create .btnCreate em{display: block;	font: 40px/80px "siaSCRIPT", Helvetica, Arial, sans-serif;  color: #fff;}
+
+
+/* selo*/
+#selo{
+	position: absolute; top: -5px; left: 170px; width: 201px; height: 386px; color:#ffffff; 
+	background: transparent url(../imgs/index-saco-selo.png) no-repeat; background-size: 201px 386px;
+	transform: skewY(-2.6deg); -webkit-transform: skewY(-2.6deg);
+}
+#selo .marca{
+	position: relative; width: 100%; height: 60px; text-align: center;
+	font: 24px/60px "siaIDLE", Helvetica, Arial, sans-serif; 
+}
+#selo h2{
+	position: relative; text-align: center; margin: 18px 20px 0 20px; padding-bottom: 20px; 
+	font: 12px/12px "siaIDLE", Helvetica, Arial, sans-serif; 
+	border-bottom: 2px solid #ffffff; 
+}
+
+#selo .sabores{position: relative; margin: 20px 20px 0 20px; height: 120px; overflow: hidden;}
+#selo ul{
+	position: absolute; text-align: center;  top: 0; left: 0;
+	font: 40px/40px "siaUNIul", Helvetica, Arial, sans-serif; text-transform: uppercase;  
+}
+
+#selo .peso{
+	position: relative; margin: 18px 20px 0 20px; height: 41px; overflow: hidden;
+	font: 23px/40px "siaUNIcn", Helvetica, Arial, sans-serif; text-align: center;
+	border-top: 2px solid #ffffff; border-bottom: 2px solid #ffffff; 
+}
+#selo .peso span{text-transform: uppercase; font-size: 12px; }
+
+#selo .oleo{
+	position: relative; margin: 13px auto 0 auto; width:44px; height: 39px; text-indent: -5555px;
+	background: transparent url(../imgs/index-saco-oleos.png) no-repeat;
+}
+
+/* Zona Colheres*/
+#spoons{
+	position: relative; width: 100%; height: 600px; /*margin-top: -260px;*/margin-top: -460px;
+	background: transparent url(../imgs/index-spoons-bg.png) repeat-x 0 110px; 
+}
+
+#spoons h3{
+	position: absolute; top:132px; left: -62px; width: 157px; height: 73px;
+	font: 19px/21px "siaHand", Helvetica, Arial, sans-serif; color: #797258;
+	background: transparent url(../imgs/index-spoons-seta-escolha.png) no-repeat 80px 40px; background-size: 67px 27px;	
+}
+#spoons .howto{
+	position: absolute; top:400px; left: 0; width: 100%;  text-align: center;
+	font: 19px/35px "siaHand", Helvetica, Arial, sans-serif; color: #797258;
+}
+
+
+
+
+/* @media and retina */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	#selo h2{border-bottom: 1px solid #ffffff;}
+	#selo .peso{border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff;}
+	#selo .oleo{background: transparent url(../imgs/index-saco-oleos@2x.png) no-repeat; background-size: 44px auto;}
+}
+
+@media only screen and (max-width: 1100px) {
+	#create .btnCreate{right:0;}	
+}
+
+/*-------------------------------------------------------------------------
+=PLATE
+-------------------------------------------------------------------------*/
+#plate{
+	position: relative; width: 100%; height: 1130px; 
+	background: transparent url(../imgs/index-pratos-bg.jpg) repeat-x left top;
+}
+
